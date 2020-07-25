@@ -3,7 +3,7 @@ using static System.Console;
 
 namespace NoasAKInheritance.Domain
 {
-    class Animal
+    abstract class Animal
     {
         public DateTime Birthdate { get; }
 
@@ -14,9 +14,13 @@ namespace NoasAKInheritance.Domain
             Birthdate = birthdate;
             Gender = gender;            
         }
-        public void Speak()
+        // I virtual kan ge standard beetende men vi kan overrida den i ärvande klassen.
+        // I abstract metoden, vi ger inte standard beetende men vi måste overrida den.
+        public abstract void Speak();
+
+        public virtual void Eat()
         {
-            WriteLine($"I'm a {Gender} and my birthdate is {Birthdate}");
+            WriteLine("Animal is eating....");
         }
     }
    

@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+using static System.Console;
 namespace NoasAKInheritance.Domain
 {
     class Tiger : Animal
@@ -12,5 +10,11 @@ namespace NoasAKInheritance.Domain
         {
 
         }
+        public override void Speak()
+        {
+          WriteLine($"I'm a {Gender} tiger and my birthdate is {Birthdate}");
+        }
+
+
     }
 }
