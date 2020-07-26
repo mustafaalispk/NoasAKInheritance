@@ -33,8 +33,7 @@ namespace NoasAKInheritance.Domain
                 animal.Speak();
 
                 WriteLine(animal.GetType());
-
-                //animal?.Speak();
+                
             }
         }
     }
